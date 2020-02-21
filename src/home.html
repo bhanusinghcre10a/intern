@@ -1,0 +1,43 @@
+<html>
+  <head>
+    <style>
+      .head {
+        margin-top: -18px;
+        padding-top: 10px;
+        height: 15%;
+        background-color: blueviolet;
+        text-align: center;
+        color: white;
+      }
+      .list {
+        margin-top: 5rem;
+        padding-left: 200px;
+        padding-bottom: 20px;
+      }
+      .btn-1 {
+        margin-left: 200px;
+        color: white;
+        width: 20rem;
+        height: 4.5rem;
+        background-color: blueviolet;
+      }
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+  </head>
+  <body>
+    <div class="head"><h1>Welcome To Startup World</h1></div>
+    <div class="list"><h3>List of startups</h3></div>
+
+    <button type="submit" class="btn btn-1" onclick="goto()">Create new</button>
+  </body>
+  <script src="axios.min.js"></script>
+  <script>
+    function goto() {
+      window.location.href = "/add";
+    }
+  </script>
+  <script src="/index.js"></script>
+</html>

@@ -1,0 +1,60 @@
+<html>
+  <head>
+    <style>
+      .head {
+        margin-top: -18px;
+        padding-top: 10px;
+        height: 15%;
+        background-color: blueviolet;
+        text-align: center;
+        color: white;
+      }
+      .i-1 {
+        margin-top: 2rem;
+      }
+      .row-1 {
+        margin-top: 4rem;
+        padding-bottom: 2rem;
+        margin-left: 40rem;
+      }
+      .btn-1 {
+        margin-top: 5rem;
+        margin-left: 60.3rem;
+        width: 18rem;
+        color: white;
+        background-color: blueviolet;
+      }
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+  </head>
+  <body>
+    <div class="head"><h1>create new startup</h1></div>
+    <form class="form">
+      <div class=" row-1">
+        <label for="inputname" class="col-sm-2 col-form-label">Name</label>
+        <div class="col-sm-10">
+          <input type="text i-1" id="inputname" />
+        </div>
+      </div>
+      <div class=" row-1">
+        <label for="inputcountry" class="col-sm-2 col-form-label"
+          >Country</label
+        >
+        <div class="col-sm-10">
+          <input type="text i-1" id="inputcountry" />
+        </div>
+      </div>
+      <button type="submit" class="btn btn-1" onclick="goto()">Save</button>
+    </form>
+  </body>
+  <script src="axios.min.js"></script>
+  <script>
+    function goto() {
+      window.location.href = "/home";
+    }
+  </script>
+  <script src="/index.js"></script>
+</html>
